@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Client.js is a NodeJS http handler that makes NodeJS WebServers easier to make.",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "files": [
     "LICENSE",
     "README.md"
@@ -12,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Night-Wisp/client.js.git"
+    "url": "https://github.com/Night-Wisp/client.js.git"
   },
   "keywords": [
     "node",
@@ -22,10 +25,7 @@
     "WebServer",
     "nodeJS"
   ],
-  "author": {
-    "name": "Night_Wisp",
-    "url": "https://Night-Wisp.github.io"
-  },
+  "author": "Night_Wisp (https://Night-Wisp.github.io)",
   "license": "GNU Affero General Public License v3.0",
   "bugs": {
     "url": "https://github.com/Night-Wisp/client.js/issues"
