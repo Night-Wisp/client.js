@@ -1,11 +1,6 @@
-var formidable = require('formidable');
-var fs = require('fs');
-var url = require('url');
-var http = require('http');
+var httpserver = require('http').createServer(require("lib/HTTPServerCode"));
 
-var handlers = {};
-var connectors = {};
-var httpserver;
+var on = require("lib/onCode");
 
 handlers["ping"] = function(data) {
   return data;
