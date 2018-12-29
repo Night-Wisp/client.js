@@ -8,6 +8,8 @@ dataGet.set("handlers", {ping: function(data) {
 }
 });
 
+dataGet.set("connectors", {});
+
 function listen(port, hostname, backlog, callback) {
   httpserver.listen(port, hostname, backlog, callback);
 }
