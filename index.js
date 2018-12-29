@@ -4,7 +4,8 @@ var on = require("lib/onCode");
 var dataGet = require("lib/data");
 
 dataGet.set("handlers", {ping: function(data) {
-  return data
+  return data;
+}
 });
 
 function listen(port, hostname, backlog, callback) {
