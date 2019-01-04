@@ -1,0 +1,71 @@
+{
+  "_from": "nodejs-client",
+  "_id": "nodejs-client@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-+pEKTHLMsiL6/RYwZnDAWISryGXKwbI8j4KjmkqrWn7k1Tz9j5KSWqfGiHNsz788kmBdBYvAeAws/MJgU18C1Q==",
+  "_location": "/nodejs-client",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nodejs-client",
+    "name": "nodejs-client",
+    "escapedName": "nodejs-client",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nodejs-client/-/nodejs-client-1.0.0.tgz",
+  "_shasum": "70b2d94bd3138be259d9b4ff6e4231580421cede",
+  "_spec": "nodejs-client",
+  "_where": "C:\\Users\\Daxton\\NodeJS\\files\\test",
+  "author": {
+    "name": "Night_Wisp",
+    "url": "https://Night-Wisp.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/Night-Wisp/nodejs-client/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "url": "^0.11.0"
+  },
+  "deprecated": false,
+  "description": "nodejs-client is a NodeJS http handler that makes NodeJS WebServers easier to make",
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "files": [
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
+  "homepage": "https://github.com/Night-Wisp/nodejs-client#readme",
+  "keywords": [
+    "node",
+    "http",
+    "client",
+    "nodejs-client",
+    "WebServer",
+    "server",
+    "nodeJS"
+  ],
+  "license": "AGPL-3.0-or-later",
+  "main": "index.js",
+  "name": "nodejs-client",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Night-Wisp/nodejs-client.git"
+  },
+  "scripts": {
+    "test": "echo \"test successful\""
+  },
+  "version": "1.0.0"
+}
