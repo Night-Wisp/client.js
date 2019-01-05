@@ -1,30 +1,30 @@
 # nodejs-client
 nodejs-client is a NodeJS http handler that makes NodeJS WebServers easier to make
 
-## Using the client
-Grab the client creator.
+## Using the server
+Grab the server constructor.
 ```javascript
-var Client = require('nodejs-client').Client;
+var Server = require('nodejs-client').Server;
 ```
 
-Create the client (notice the capitalization difference).
+Create the server object (notice the capitalization difference).
 ```javascript
-var client = new Client();
+var server = new Server();
 ```
 
-Set up the client's so going to any page on localhost:*portNumber* will open up a welcome screen but going to localhost:*portNumber*/goodbye will say goodbye.
+Set up the server so going to any page on localhost:*portNumber* will open up a welcome screen but going to localhost:*portNumber*/goodbye will say goodbye.
 ```javascript
-client.on("connect", function (req, res, callback) {
+server.on("connect", function (req, res, callback) {
   callback({type: "text/html", code: 200, data: '<!DOCTYPE html><html lang="en-US"><head><title>Welcome</title></head><body><h1>Welcome!</h1></body></html>'});
   
-client.on("connect", "/goodbye", function (req, res, callback) {
+server.on("connect", "/goodbye", function (req, res, callback) {
   callback({type: "text/html", code: 200, data: '<!DOCTYPE html><html lang"en-US"><head><title>Goodbye</title></head><body><h1>Goodbye!</h1></body></html>'});
 });
 ```
 
-Tell the client to listen to connections on port 8080.
+Tell the server to listen to connections on port 8080.
 ```javascript
-client.listen(8080);
+server.listen(8080);
 ```
 
 Once you use the command line to start your script (`node testServer.js` if you named your file with the above code testServer.js), going to localhost:8080/goodbye will show:
@@ -39,7 +39,7 @@ Where going to any other page on localhost:8080 will show:
 
 # Internal functions
 
-## Client() constructor
+## Server() constructor
 ### on()
 on() takes 3 arguments, an event, an optional name, and a function, so it looks like
 
@@ -71,7 +71,7 @@ This should always have a specified name, this will listen for data sent from th
 
 The function argument will take 2 inputs, *data* and *callback*.
 
-The data input will have the data sent rom the http client.
+The data input will have the data sent from the http client.
 
 The callback function will be ran with 1 input, the data to send to the http client that requested the data.
 
