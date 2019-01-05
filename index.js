@@ -1,6 +1,6 @@
 var currentID = 0;
 
-exports.Client = function() {
+exports.Server = function() {
   var serverCode = require("./lib/HTTPServerCode");
   var id = currentID++;
 
